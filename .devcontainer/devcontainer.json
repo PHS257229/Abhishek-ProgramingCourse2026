@@ -1,0 +1,20 @@
+{
+  "name": "Programming Course",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "postCreateCommand": "sudo apt-get update -y && sudo apt-get install -y gfortran-11 g++-11 python3 python3-pip gnuplot grace && sudo update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-11 100 && sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 100 && pip3 install --upgrade pip && pip3 install numpy==2.2.6 matplotlib==3.10.9 scipy==1.15.3",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "fortran-lang.linter-gfortran",
+        "ms-vscode.cpptools",
+        "ms-python.python",
+        "ms-python.pylance",
+        "formulahendry.code-runner"
+      ],
+      "settings": {
+        "code-runner.runInTerminal": true,
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}
