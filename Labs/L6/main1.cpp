@@ -1,4 +1,4 @@
-////////////////sizeof and & (address of) operators ///////
+//////////////sizeof and & (address of) operators ///////
 
 // #include <iostream>
 // using namespace std;
