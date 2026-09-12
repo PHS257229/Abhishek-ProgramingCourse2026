@@ -1,19 +1,19 @@
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
+// int main(){
 
-    double m, v, p;
-    cout<<"enter the value of mass in Kg :  " ;
-    cin>>m;
-    cout<<"Enter the value of velocity in m/s :  ";
-    cin>>v;
-    p = m *v;
-    cout<<"The value of memontum is : "<<p<<endl;
+//     double m, v, p;
+//     cout<<"enter the value of mass in Kg :  " ;
+//     cin>>m;
+//     cout<<"Enter the value of velocity in m/s :  ";
+//     cin>>v;
+//     p = m *v;
+//     cout<<"The value of memontum is : "<<p<<endl;
     
-    return 0;
+//     return 0;
     
-}
+// }
 
 
 
@@ -41,7 +41,7 @@ int main(){
 // int main(){
 
 //     double current[] = {5.2,118.6,27.05,3.75};
-//     cout<<setw(10)<<right<<"reading"<<setw(10)<<right<<"current"<<endl; 
+//     cout<<setw(10)<<right<<"reading"<<setw(10)<<right<<"current(mA)"<<endl; 
 
 //     for(int i=0; i<4; i++){
 //         cout<<setw(10)<<right<<(i+1)<<setw(10)<<right<<current[i]<<endl;
@@ -84,7 +84,7 @@ int main(){
 //     cout<<"Enter current (A) : ";
 //     cin>>current ;
 //     // Check if both conditions are within safe ranges
-//     if (voltage >= 0 && voltage <= 230 && current >= 0 && current <= 10) {
+//     if ((voltage >= 0 && voltage <= 230) && (current >= 0 && current <= 10)) {
 //         cout << "Safe" <<endl;
 //     } else {
 //         cout << "Unsafe" << endl;
@@ -420,7 +420,7 @@ int main(){
 
 //     cout << "Voltage readings using pointer arithmetic:\n";
 
-//   
+  
 //     for (int i = 0; i < 5; ++i) {
 //         // *ptr gets the value at the current memory address
 //         cout << "Reading " << (i + 1) << ": " << *ptr << " V" << endl;
@@ -439,28 +439,28 @@ int main(){
 
 
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int main() {
+int main() {
 
-//     double offset1 = 1.25;
-//     double offset2 = 5.84;
-
-
-//     double* ptr1 = &offset1;
-//     double* ptr2 = &offset2;
-
-//     cout << "Before swap:" << endl;
-//     cout << "offset1 = " << offset1 << ", offset2 = " << offset2 << "\n\n";
+    double offset1 = 1.25;
+    double offset2 = 5.84;
 
 
-//     double temp = *ptr1;
-//     *ptr1 = *ptr2;       
-//     *ptr2 = temp;       
+    double* ptr1 = &offset1;
+    double* ptr2 = &offset2;
 
-//     cout << "After swap:" << endl;
-//     cout << "offset1 = " << offset1 << ", offset2 = " << offset2 << endl;
+    cout << "Before swap:" << endl;
+    cout << "offset1 = " << offset1 << ", offset2 = " << offset2 << "\n\n";
 
-//     return 0;
-// }
+
+    double temp = *ptr1;
+    *ptr1 = *ptr2;       
+    *ptr2 = temp;       
+
+    cout << "After swap:" << endl;
+    cout << "offset1 = " << offset1 << ", offset2 = " << offset2 << endl;
+
+    return 0;
+}
